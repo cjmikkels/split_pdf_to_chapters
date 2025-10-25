@@ -1,0 +1,19 @@
+[project]
+name = "split-pdf-to-chapters"
+version = "0.1.0"
+description = "CLI tool to split a PDF into separate chapter files using the document outline"
+readme = "README.md"
+authors = [
+    { name = "Generated" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "PyPDF2>=3.0.0"
+]
+
+[project.scripts]
+split-pdf-to-chapters = "split_pdf_to_chapters.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
